@@ -6,13 +6,34 @@
   Dark Navy: #020d22
   Forest Green: #015045
 */
+
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+@font-face {
+  font-family: "Bespoke-R40K4cJxyk";
+  src: url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.eot?v=1598689300115");
+  src: url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.eot?v=1598689300115?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.woff?v=1598689300606")
+      format("woff"),
+    url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.ttf?v=1598689300806")
+      format("truetype"),
+    url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.svg?v=1598689303109")
+      format("svg");
+}
+
 html {
   background-color: #e3ded9;
 }
 
+
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: "Inconsolata";
   margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12pt;
+  line-height: 20pt;
 }
 
 h1, h2, h3, h4 {
