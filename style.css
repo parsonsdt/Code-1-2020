@@ -1,0 +1,76 @@
+/*
+
+  Color Palette: (Ben: totally up to change this. I just searched a couple color hexes and put them here)
+  shell-white background: #e3ded9
+  Orange red: #be3400
+  Dark Navy: #020d22
+  Forest Green: #015045
+*/
+html {
+  background-color: #e3ded9;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  /* color: #373fff; */
+  color: #020d22;
+}
+
+.nav-container ul, #sub-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+  #sub-nav ul li a{
+    color: #015045;
+  }
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #020d22;
+  /* background-color: lime; */
+}
+  .nav-container > div {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .nav-container a {
+    color: #e3ded9;
+    text-decoration: none;
+  }
+    .nav-container a:hover {
+      background-color: rgba(255, 255, 255, .2);
+    }  
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+}
+  .main-container > div {
+    border: 1px solid black;
+    padding: 30px;
+  }
+  .main-container .front-page-image {
+    width: 90vw;
+  }
+
+#sub-nav {
+  flex: 1;
+}
+
+#main-panel {
+  flex: 2.5;
+}
+
+#home-panel {
+  flex: 1;
+}
