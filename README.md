@@ -1,37 +1,26 @@
-Welcome to Glitch
+Code 1 2020
 =================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+This is the website for Code 1, an undergraduate-level course at Parsons Design & Technology at the New School.  
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+### Faculty
+- Ben Norskov (he/him)
+- Courtney Snavely (she/her)
+- Xin Xin (they/them)  
 
-Find out more [about Glitch](https://glitch.com/about).
-
-
-Your Project
+Course Descriptions
 ------------
 
-### ← README.md
+Code 1 introduces software as an expressive and community-centric medium for artists, designers, and technologists. Through a technical and critical lens, students learn to write custom code using the JavaScript library p5.js and build foundational understanding of object-oriented programming throughout the semester. By engaging in project-based learning, experimentation, and play, this course is facilitated with a beginner and artist-friendly mindset. Designed for students with no prior coding experience, Code 1 offers multiple contexts and approaches for creating computational visuals and interactive experience. 
 
-That's this file, where you can tell people what your cool website does and how you built it.
+Learning Outcomes
+------------
 
-### ← index.html
+The three learning pillars for Code 1 are code, design, and critique. Students are expected to:
 
-Where you'll write the content of your website. 
+1. Demonstrate knowledge and application of object-oriented programming skills in p5.js.
+1. Embody code as an expressive medium by learning its strengths and limitations. 
+1. Become familiar with the process of planning, organizing, and maintaining code & design projects. 
+1. Investigate the relationship between code, design, and critique through past examples and creating your own. 
+1. Gain insights into the social impact of code; how it creates empowerments and disempowerment under different contexts. 
 
-### ← style.css
-
-CSS files add styling rules to your content.
-
-### ← script.js
-
-If you're feeling fancy you can add interactivity to your site with JavaScript.
-
-### ← assets
-
-Drag in `assets`, like images or music, to add them to your project
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
