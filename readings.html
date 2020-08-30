@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Code 1 Reading Assignments</title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+
+  <script>
+    /*
+      Place any other syllabus information in here as html in quotes.
+      
+      Add in the sub-nav elemenet with the key for this object matching the class name on the sub nav. Also add the sub-nav__item class to the object.
+      
+      The script for this page adds a click handler to every .sub-nav__item and looks up what it should place in #main-panel based on its coresponding key in dataStruct below
+    */
+    let dataStruct = {
+      code: "<p>Read Chapter 1 from Code: the Hidden Language of Computer Hardware and Software by Charles Petzold.</p>",
+      history: "<p>Read How Computer Code Became a Modern Design Medium—an Oral History by Liz Stinson.</p>",
+      time: "<p>Read Time. Non-Western Views by C. K. Raju </p>"
+    }
+  </script>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body onload="syllabusSetup();">
+  <div class="nav-container">
+    <div><a href="syllabus.html">syllabus</a></div>
+    <div><a href="schedule.html">schedule</a></div>
+    <div><a href="assignment.html">assignments</a></div>
+    <div><a href="readings.html">readings</a></div>
+    <div><a href="resource.html">resources</a></div>
+    <div><a href="people.html">people</a></div>
+  </div>
+  <div class="main-container">
+    <div id="sub-nav">
+      <ul>
+        <li><a href="#" class="code sub-nav__item">Week 1, Due September 11</a></li>
+        <li><a href="#" class="history sub-nav__item">Week 2, Due September 18</a></li>
+        <li><a href="#" class="time sub-nav__item">Week 3, Due September 25</a></li>
+      </ul>
+    </div>
+    <div id="main-panel">
+      <h1>
+        Reading and Responses
+      </h1>
+      <P>
+        Reading prompts will be adde in the list on the left as they are assigned.
+      </P>
+    </div>
+  </div>
+</body>
+
+</html>
