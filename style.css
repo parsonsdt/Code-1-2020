@@ -99,7 +99,14 @@ h1, h2, h3, h4 {
     .main-panel__schedule-table div:nth-child(odd) {
       font-weight: bold;
     }
-
+  
+  #main-panel .syllabus__gradeHolder {
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+    #main-panel .syllabus__gradeHolder div:nth-child(odd) {
+      font-weight: bold;
+    } 
 #home-panel {
   flex: 1;
 }
