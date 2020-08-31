@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Class Tutorials</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+
+        let weekOne = "<h1>Week 1</h1>";
+        weekOne += "<ul><li><a href='https://youtu.be/wiG7wLwyW0E'>1.1 p5 Editor and the Web Console</a>";
+        weekOne += "<li><a href='https://youtu.be/hISICBkFa4Q'>2D Primitives</a>";
+        weekOne += "<li><a href='https://youtu.be/fTEvHLLwSBE'>fill() and blendMode()</a>";
+
+        let dataStruct = {
+            week1: weekOne
+        }
+    </script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="activateSubNav();">
+    <div class="nav-container">
+        <div><a href="syllabus.html">syllabus</a></div>
+        <div><a href="schedule.html">schedule</a></div>
+        <div><a href="assignment.html">assignments</a></div>
+        <div><a href="readings.html">readings</a></div>
+        <div><a href="tutorials.html">tutorials</a></div>
+        <div><a href="resource.html">resources</a></div>
+        <div><a href="people.html">people</a></div>
+    </div>
+    <div class="main-container">
+        <div id="sub-nav">
+            <ul>
+                <li><a class='sub-nav__item week1' href='#'>Week 1</a></li>
+                <li>Week 2</li>
+                <li>Week 3</li>
+                <li>Week 4</li>
+                <li>Week 5</li>
+                <li>Week 6</li>
+                <li>Week 7</li>
+                <li>Week 8</li>
+                <li>Week 9</li>
+                <li>Week 10</li>
+                <li>Week 11</li>
+                <li>Week 12</li>
+                <li>Week 13</li>
+                <li>Week 14</li>
+                <li>Week 15</li>
+            </ul>
+        </div>
+        <div id="main-panel">
+            <h1>Class Tutorials</h1>
+            <p>
+                We'll post tutorials specifically for our class as they are available. Please select the week you're
+                interested in on the left.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
