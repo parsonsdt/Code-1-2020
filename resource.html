@@ -12,17 +12,24 @@
   <link rel="stylesheet" href="style.css" />
 
   <script>
-    let tempSchool = "<h1>University Resources</h1>";
-    tempSchool += "<p>The university provides many resources to help students achieve academic and artistic excellence. These resources include:</p>";
-    tempSchool += "<ul><li><b>University Libraries and Archives:</b> <a href='http://library.newschool.edu'>http://library.newschool.edu</a> (See also Reserves)</li>";
-    tempSchool += "<li><b>University Learning Center:</b> <a href='http://www.newschool.edu/learning-center'>http://www.newschool.edu/learning-center</a></li>";
-    tempSchool += "<li><b>Student Disability Services:</b> <a href='http://www.newschool.edu/student-disability-services/'>www.newschool.edu/student-disability-services/</a>";
-    tempSchool += "<br>If you are a student with a disability/disabled student, or believe you might have a disability that requires accommodations, please contact the Student Disability Services (SDS) at studentdisability@newschool.edu, or 212-229-5626, to coordinate all reasonable accommodation requests.</li>";
-    tempSchool += "<li><b>The New School Food Assistance:</b> For more information on food assistance and additional resources: <a href='https://www.newschool.edu/student-support-crisis-management/student-food-pantry-faq/'>https://www.newschool.edu/student-support-crisis-management/student-food-pantry-faq/</a> </li>";
-    tempSchool += "<li><b>Health and Wellness:</b> For information about services and support available to New School students: <a href='https://www.newschool.edu/campus-community/health-wellness-support/'>https://www.newschool.edu/campus-community/health-wellness-support/</a></li>";
+    let schoolBuilder = "<h1>University Resources</h1>";
+    schoolBuilder += "<p>The university provides many resources to help students achieve academic and artistic excellence. These resources include:</p>";
+    schoolBuilder += "<ul><li><b>University Libraries and Archives:</b> <a href='http://library.newschool.edu'>http://library.newschool.edu</a> (See also Reserves)</li>";
+    schoolBuilder += "<li><b>University Learning Center:</b> <a href='http://www.newschool.edu/learning-center'>http://www.newschool.edu/learning-center</a></li>";
+    schoolBuilder += "<li><b>Student Disability Services:</b> <a href='http://www.newschool.edu/student-disability-services/'>www.newschool.edu/student-disability-services/</a>";
+    schoolBuilder += "<br>If you are a student with a disability/disabled student, or believe you might have a disability that requires accommodations, please contact the Student Disability Services (SDS) at studentdisability@newschool.edu, or 212-229-5626, to coordinate all reasonable accommodation requests.</li>";
+    schoolBuilder += "<li><b>The New School Food Assistance:</b> For more information on food assistance and additional resources: <a href='https://www.newschool.edu/student-support-crisis-management/student-food-pantry-faq/'>https://www.newschool.edu/student-support-crisis-management/student-food-pantry-faq/</a> </li>";
+    schoolBuilder += "<li><b>Health and Wellness:</b> For information about services and support available to New School students: <a href='https://www.newschool.edu/campus-community/health-wellness-support/'>https://www.newschool.edu/campus-community/health-wellness-support/</a></li>";
+
+
+    let tutsBuilder = "<h1>Week 1</h1>";
+    tutsBuilder += "<ul><li><a href='https://youtu.be/wiG7wLwyW0E'>1.1 p5 Editor and the Web Console</a>";
+    tutsBuilder += "<li><a href='https://youtu.be/hISICBkFa4Q'>2D Primitives</a>";
+    tutsBuilder += "<li><a href='https://youtu.be/fTEvHLLwSBE'>fill() and blendMode()</a>";
 
     let dataStruct = {
-      school: tempSchool
+      school: schoolBuilder,
+      tutorials: tutsBuilder
     }
   </script>
 
@@ -41,7 +48,7 @@
   <div class="main-container">
     <div id="sub-nav">
       <ul>
-        <li>Tutorials</li>
+        <li><a class='sub-nav__item tutorials' href='#'>Tutorials</a></li>
         <li>References</li>
         <li><a href='readings.html'>Course Readings</a></li>
         <li><a class='sub-nav__item school' href='#'>University Resources</a></li>
