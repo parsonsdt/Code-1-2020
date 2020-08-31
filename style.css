@@ -91,6 +91,14 @@ h1, h2, h3, h4 {
 #main-panel {
   flex: 2.5;
 }
+  .main-panel__schedule-table {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-row-gap: 1.5em;
+  }
+    .main-panel__schedule-table div:nth-child(odd) {
+      font-weight: bold;
+    }
 
 #home-panel {
   flex: 1;
