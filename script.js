@@ -16,7 +16,7 @@ function activateSubNav(options) {
 
       // we can add in conditional page footer/headers here based on the passed through argument. Without one, it's ignored. 
       if (options === "assignments") {
-        _html += "<hr><h1>How to turn in your work</h1><p>Upload to the class github</p>";
+        _html += "<hr><h1>How to turn in your work</h1><ol><li>Save your sketch on <a href='https://editor.p5js.org/'>p5js's web editor</a>.</li><li>Title your sketch in this format:<br>&ldquo;Code 1, Assignment 1: Instructional Drawing&rdquo; or &ldquo;Code 1, Assignment 3: Personal Time&rdquo;</li><li>In a comment at the top of your sketch include:<br><ul><li>Your name</li><li>Your faculty (Xin, Courtney, or Ben)</li></ul></li><li>Place a link to your sketch on Canvas</li></ol>";
       }
 
       main.innerHTML = _html;
