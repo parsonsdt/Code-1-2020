@@ -11,11 +11,25 @@
   <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- import the webpage's javascript file -->
+  <script>
+    let tempSchool = "<h1>University Resources</h1>";
+    tempSchool += "<p>The university provides many resources to help students achieve academic and artistic excellence. These resources include:</p>";
+    tempSchool += "<ul><li><b>University Libraries and Archives:</b> <a href='http://library.newschool.edu'>http://library.newschool.edu</a> (See also Reserves)</li>";
+    tempSchool += "<li><b>University Learning Center:</b> <a href='http://www.newschool.edu/learning-center'>http://www.newschool.edu/learning-center</a></li>";
+    tempSchool += "<li><b>Student Disability Services:</b> <a href='http://www.newschool.edu/student-disability-services/'>www.newschool.edu/student-disability-services/</a>";
+    tempSchool += "<br>If you are a student with a disability/disabled student, or believe you might have a disability that requires accommodations, please contact the Student Disability Services (SDS) at studentdisability@newschool.edu, or 212-229-5626, to coordinate all reasonable accommodation requests.</li>";
+    tempSchool += "<li><b>The New School Food Assistance:</b> For more information on food assistance and additional resources: <a href='https://www.newschool.edu/student-support-crisis-management/student-food-pantry-faq/'>https://www.newschool.edu/student-support-crisis-management/student-food-pantry-faq/</a> </li>";
+    tempSchool += "<li><b>Health and Wellness:</b> For information about services and support available to New School students: <a href='https://www.newschool.edu/campus-community/health-wellness-support/'>https://www.newschool.edu/campus-community/health-wellness-support/</a></li>";
+
+    let dataStruct = {
+      school: tempSchool
+    }
+  </script>
+
   <script src="script.js" defer></script>
 </head>
 
-<body>
+<body onload="activateSubNav();">
   <div class="nav-container">
     <div><a href="syllabus.html">syllabus</a></div>
     <div><a href="schedule.html">schedule</a></div>
@@ -28,12 +42,15 @@
     <div id="sub-nav">
       <ul>
         <li>Tutorials</li>
-        <li>Readings</li>
         <li>References</li>
+        <li><a class='sub-nav__item school' href='#'>University Resources</a></li>
       </ul>
     </div>
     <div id="main-panel">
-      links on the left here works like bookmarks
+      <h1>Resources</h1>
+      <p>
+        We'll post many resources to help and contribute to our class here. Please select the category from the left.
+      </p>
     </div>
   </div>
 </body>
