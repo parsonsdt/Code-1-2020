@@ -14,12 +14,20 @@
     <script>
 
         let weekOne = "<h1>Week 1</h1>";
-        weekOne += "<ul><li><a href='https://youtu.be/wiG7wLwyW0E'>1.1 p5 Editor and the Web Console</a>";
-        weekOne += "<li><a href='https://youtu.be/hISICBkFa4Q'>2D Primitives</a>";
-        weekOne += "<li><a href='https://youtu.be/fTEvHLLwSBE'>fill() and blendMode()</a>";
+        weekOne += "<ul><li>1.1 p5 Web Editor and the Console (<a href='https://youtu.be/wiG7wLwyW0E' target='_blank'>YouTube</a> / <a href='https://diode.zone/videos/watch/ce6aa5ed-7170-4b07-84db-5fa10199a55d' target='_blank'>PeerTube</a>)</li>";
+        weekOne += "<li>1.2 2D Primitives (<a href='https://youtu.be/hISICBkFa4Q' target='_blank'>YouTube</a> / <a href='https://diode.zone/videos/watch/f791e49d-3be6-47b8-bad6-27aacadce78c' target='_blank'>PeerTube</a>)</li>";
+        weekOne += "<li>1.3 RGB Colors and blendMode() (<a href='https://www.youtube.com/watch?v=fTEvHLLwSBE&feature=youtu.be' target='_blank'>YouTube</a> / <a href='https://diode.zone/videos/watch/bf6a2187-93aa-494f-86a7-5834a20b4d47' target='_blank'>PeerTube</a>)</li></ul>";
+        
+        let externalList = "<h1>Tutorials from the Community</h1>";
+        externalList += "<h2>General</h2><ul><li><a href='https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA'>Coding Train</a>, Dan Shiffman</li><li><a href='https://www.youtube.com/playlist?list=PLuLgmkp7OJgFhpFaQt4LGZBOoK_sjPbxj'>AriCiano</a>, Ari Melenciano</li><li><a href='https://www.youtube.com/channel/UCzMs9qg50AW2LEpLDzHT5NA/videos'>Qtv</a>, Qianqian Ye &mdash; p5 tutorials in Mandarin</li></ul>";
+        externalList += "<h2>Color</h2><ul><li><a href='https://medium.com/@kellylougheed/rainbow-paintbrush-in-p5-js-e452d5540b25'>Rainbow Paintbrush in p5.js</a>, Kelly Lougheed &mdash; practical example on using <a href='https://p5js.org/reference/#/p5/colorMode'>colorMode() HSL</a></li></ul>";
+        externalList += "<h2>Trigonometry</h2><ul><li><a href='https://natureofcode.com/book/chapter-3-oscillation/'>The Nature of Code: Oscillation</a>, Dan Shiffman</li></ul>";
+            externalList += "<h2>JavaScript</h2><li><a href='https://github.com/processing/p5.js/wiki/JavaScript-basics'>JavaScript Basics</a>, Lauren McCarthy</li>";
+                externalList += "<h2>DOM</h2><li><a href='https://github.com/processing/p5.js/wiki/Beyond-the-canvas'>Beyond the Canvas</a>, Evelyn Masso</li>";
 
         let dataStruct = {
-            week1: weekOne
+            week1: weekOne,
+            external: externalList
         }
     </script>
 
@@ -54,6 +62,7 @@
                 <li>Week 13</li>
                 <li>Week 14</li>
                 <li>Week 15</li>
+                <li><a class='sub-nav__item external' href='#'>Community</a></li>
             </ul>
         </div>
         <div id="main-panel">
