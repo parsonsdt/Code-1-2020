@@ -11,11 +11,19 @@
   <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- import the webpage's javascript file -->
+  <script>
+    let dataStruct = {
+      instructional: "<h1>Assignment 1: Instructional Drawing</h1><p>For your homework, imagine you are an artist sending instructions for your work to be replicated with code (i.e. <a href='https://massmoca.org/event/walldrawing274/'>Sol Lewitt</a>). <ul><li>Write pseudocode for a drawing that you want to execute</li><li>Exchange your instructions with a partner in the class</li><li>Following your partner's instructions, use processing to create their drawing</li></ul></p><h2 class='dueDate'>Due: September 11</h2>",
+      face: "<h1>Assignment 2: Face Generator</h1><p>Coming Soon</p>",
+      personal: "<h1>Coming Soon</h1>",
+      optical: "<h1>Coming Soon</h1>",
+    }
+
+  </script>
   <script src="script.js" defer></script>
 </head>
 
-<body onload="activateSubNav();">
+<body onload="activateSubNav('assignments');">
   <div class="nav-container">
     <div><a href="syllabus.html">syllabus</a></div>
     <div><a href="schedule.html">schedule</a></div>
@@ -28,7 +36,7 @@
   <div class="main-container">
     <div id="sub-nav">
       <ul>
-        <li>#1 Instructional Drawing</li>
+        <li><a href="#" class="instructional sub-nav__item">#1 Instructional Drawing</a></li>
         <li>#2 Face Generator</li>
         <li>#3 Personal Time</li>
         <li>#4 Optical Illusion</li>
