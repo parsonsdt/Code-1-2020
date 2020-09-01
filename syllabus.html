@@ -38,6 +38,15 @@
     gradeBuilder += "<div>Assignment #8~10</div><div>600 points</div>";
     gradeBuilder += "</div>"; // end grid layout container
 
+    let rubricBuilder = "<h1>Assessment Rubric</h1>";
+    rubricBuilder += "<div class='syllabus__rubricTable'>"; // start of grid holder
+    rubricBuilder += "<div></div><div>Needs Improvement</div><div>Satisfactory</div><div>Good</div><div>Excellent</div>"; // first row
+    rubricBuilder += "<div>Code</div><div>Does not meet the stated requirements. Is missing core components of the assignment. Contains significant errors that display a lack of comprehension or understanding of the material.</div><div>Ability to develop working functional code with limited errors. Demonstrates comprehension by building upon the technical concepts in submitted work.</div><div>Initiates learning beyond the minimum requirements of the assignment. Attempts to develop skills and takes risk without sacrificing legibility and functionality of code.</div><div>Creative solutions to nuanced and complex problems in programming. Code is formatted in an organized, highly readable manner, within minimum bugs and errors.</div>";
+    rubricBuilder += "<div>Design</div><div>Design shows a lack of intentions or does not respond to the assignment brief.</div><div>Design elements are intentional and motivated by the assignment brief.</div><div>Design demonstrates an emerging level of care and consideration. Work shows strong potential with space for improvement.</div><div>Design demonstrates a well developed sense of aesthetics or form through execution. The work demonstrates mature consideration of the relationship between concept and execution.</div>";
+    rubricBuilder += "<div>Critique</div><div>Engages superficially with the conceptual material delivered each week.</div><div>Evidence of engagement with the conceptual material delivered each week.</div><div>Demonstrates engagement with the conceptual material beyond the minimum requirements for the course. Shows emerging fluency in utilizing concepts within their own work.</div><div>Demonstrates fluent grasp of conceptual material presented. Is able to skillfully integrate concepts into their own work. Ability to build compelling narratives around individual assignments.</div>";
+    rubricBuilder += "</div>"; // end fo grid layout container
+
+
     let dataStruct = {
       contact: "<h1>Contact Info</h1><p>Section A: Xin Xin (they/them)</p><ul><li>xinx[at]newschool[dot]edu</li><li><a href='https://NewSchool.zoom.us/j/91065913993/'>Zoom Link</a></li><li><a href='https://code1group.slack.com/archives/C019TUZ0HSP'>Slack #section_a</a></li></ul><p>Section B: Courtney Snavely (she/her)</p><ul><li>courtneysnavely[at]newschool[dot]edu</li><li><a href='https://NewSchool.zoom.us/j/97475305665'>Zoom Link</a></li><li><a href='https://code1group.slack.com/archives/C019CUPN40P'>Slack #section_b</a></li></ul><p>Section C: Ben Norskov (he/him)</p><ul><li>norskovb[at]newschool[dot]edu</li><li><a href='https://NewSchool.zoom.us/j/7245562259'>Zoom Link</a></li><li><a href='https://code1group.slack.com/archives/C016SCZTN58'>Slack #section_c</a></li></ul>",
       description: "<h1>Course Description</h1><p>Code 1 introduces software as an expressive and community-centric medium for artists, designers, and technologists. Through a technical and critical lens, students learn to write custom code using the JavaScript library p5.js and build foundational understanding of object-oriented programming throughout the semester. By engaging in project-based learning, experimentation, and play, this course is facilitated with a beginner and artist-friendly mindset. Designed for students with no prior coding experience, Code 1 offers multiple contexts and approaches for creating computational visuals and interactive experience. ",
@@ -46,7 +55,8 @@
       land: "<h1>Land Acknowledgement</h1><p>We would like to acknowledge the Lenni-Lenape people who are the original inhabitants of Lenapehoking and the island of Mannahatta. The land The New School University is built upon, including all of  New York City, present-day New Jersey and eastern Pennsylvania along the Delaware River watershed, western Long Island, and the Lower Hudson Valley, comprise Lenape ancestral homeland. This land was not ceded nor sold, as folklore would have us believe, to the Dutch for beads and trinkets. This land was forcibly taken through occupation by European settlers, resulting in displacement, forced migration, and genocide. In the present day there are Lenape communities throughout North America, though much of the original Lenape territory remains under settler occupation and control. </p><p>As settlers who have benefitted from the colonization of sovereign land we acknowledge our responsibility to examine and question systems of oppression that continue through to the present day and educate ourselves about the original stewards of this land. </p><p>We also want to acknowledge the Haudenosaunee ironworkers from the Six Nations of the Iroquois, mostly from the Mohawk tribe whose labor built the many iconic skyscrapers and steel bridges in New York City. As recently as 2012 about 200 of the 2,000 structural ironworkers in NYC are Mohawk. Everyday we view the city skyline of Manhattan we are reminded of their contribution.</p>",
       questions: "<h1>Asking Questions in Class</h1><ul><li>Will you repeat the last thing you said?</li><li>Could you do another example?</li><li>Could you go through that again, slower?</li><li>Will you explain “blah” a different way?</li><li>Can you explain that word “blah” you said?</li><li>Can you please speak a little slower?</li></ul><h1>Asking Questions Outside of Class </h1><ul><li>Reach out to me on Slack</li><li>Reach out to your peers on Slack</li><li>Book an appointment with DT Study</li><li>Book an appointment with the University Learning Center</li><li>Post your question on the Processing Discourse</li></ul>",
       grades: gradeBuilder,
-      policies: tempPolicy
+      policies: tempPolicy,
+      rubric: rubricBuilder
     }
   </script>
 
@@ -73,6 +83,7 @@
         <li><a href="#" class="land sub-nav__item">Land Acknowledgement</a></li>
         <li><a href="#" class="questions sub-nav__item">Asking Questions</a></li>
         <li><a href="#" class="grades sub-nav__item">Grades</a></li>
+        <li><a href="#" class="rubric sub-nav__item">Grading Rubric</a></li>
         <li><a href="#" class="policies sub-nav__item">University, College/School, and Program Policies</a></li>
       </ul>
     </div>

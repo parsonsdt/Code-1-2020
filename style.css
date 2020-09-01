@@ -4,7 +4,13 @@
   shell-white background: #e3ded9
   Orange red: #be3400
   Dark Navy: #020d22
-  Forest Green: #015045
+  Forest Green: #015045\
+
+  Colors used in rubric table:
+  light-sea green: #C8D6CA;
+  Light green, spring: #99BFAA;
+  perriwinkle blue: #99BFAA;
+  mauve: #e3ded9
 */
 
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
@@ -112,7 +118,40 @@ h1, h2, h3, h4 {
   }
     #main-panel .syllabus__gradeHolder div:nth-child(odd) {
       font-weight: bold;
-    } 
+    }
+  #main-panel .syllabus__rubricTable {
+    display: grid;
+    grid-template-columns: 8% auto auto auto auto;
+    grid-column-gap: 1px;
+  }
+    #main-panel .syllabus__rubricTable div {
+      padding: .5em;
+      border-bottom: 1px #020d22 solid;
+    }
+    #main-panel .syllabus__rubricTable div:nth-child(5n) {
+      background-color: #5c3d46;
+      color: #e3ded9;
+    } /* Excellent */
+    #main-panel .syllabus__rubricTable div:nth-child(5n-1) {
+      background-color: #5c868d;
+    } /* Good */
+    #main-panel .syllabus__rubricTable div:nth-child(5n-2) {
+      background-color: #99BFAA;
+    } /* SATISFACTORY */
+    #main-panel .syllabus__rubricTable div:nth-child(5n-3) {
+      background-color: #C8D6CA;
+    } /* Needs Improvement */
+    #main-panel .syllabus__rubricTable div:nth-child(5n-4) {
+      border-left: solid 1px #020d22;
+      font-weight: bold;
+    }
+    
+    #main-panel .syllabus__rubricTable div:nth-child(-n+5) {
+      background-color: #020d22;
+      color: #e3ded9;
+      font-weight: bold;
+      } /* table headers */
+
 #home-panel {
   flex: 1;
 }
