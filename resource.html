@@ -22,17 +22,33 @@
     schoolBuilder += "<li><b>Health and Wellness:</b> For information about services and support available to New School students: <a href='https://www.newschool.edu/campus-community/health-wellness-support/'>https://www.newschool.edu/campus-community/health-wellness-support/</a></li></ul>";
     schoolBuilder += "<h2>University Learning Center</h2><p>For assistance with coursework during the semester, you are encouraged to schedule online tutoring sessions at the University Learning Center (ULC). Individual appointments in Writing, Math, Software, Computer Programming, Oral Presentations and Time Management are available 7am-midnight Mon-Fri and 12-5pm on Saturdays (starting October 3rd). Appointments are scheduled via <a href='https://newschool.mywconline.com/'>WCONLINE</a>, and you can also try for a virtual “walk-in” session by emailing learningcenter@newschool.edu prior to and up to 15 minutes past a given hour. The ULC also offers weekly and biweekly sessions.</p>";
 
-    let referenceList = "<ul>";
+    // ======================================================================================================= Reference Links
+    let referenceList = "<h2>Code Artistry and Processing</h2><ul>";
     referenceList += "<li><a href='https://www.sketchmachine.net/'>Casey REAS's Sketch Machine<a></li>";
     referenceList += "<li><a href='https://www.metaflop.com/'>Create a custom font and download it<a></li>";
-    referenceList += "<li><a href='https://beesandbombs.tumblr.com/'>Bees and Bombs</a> A fantastic collection of processing-created optical illusions</li>"
-    referenceList += "<li><a href='https://native-land.ca/'>Native Land</a> An online map of pre-colonial cultures.</li>";
-
+    referenceList += "<li><a href='https://beesandbombs.tumblr.com/'>Bees and Bombs</a> A fantastic collection of processing-created optical illusions</li>";
     referenceList += "</ul>";
+
+    referenceList += "<h2>Web Development Industry</h2><ul>";
+    referenceList += "<li><a href='https://vuejs.org/'>Vue (JS Framework)</a> Open source! Developed by a Parsons DT grad!</li>";
+    referenceList += "<li><a href='https://reactjs.org/'>React (JS Framework)</a> Developed By Facebook</li>";
+    referenceList += "<li><a href='https://angularjs.org'>Angular (JS Framework)</a> Developed by Google</li>";
+    referenceList += "<li><a href='https://svelte.dev/'>Svelte (JS Framework)</a> Developed at the NYT (Ben's favorite lately)</li>";
+    referenceList += "</ul>";
+
+    referenceList += "<h2>Coding Adjacent and Cultural</h2><ul>";
+    referenceList += "<li><a href='https://native-land.ca/'>Native Land</a> An online map of pre-colonial cultures.</li>";
+    referenceList += "</ul>";
+    
+    referenceList += "<p>More will be uploaded as the clsas progresses. If you find something that should go here, please let us know.</p>"
+    /*
+    referenceList += "<li><a href=''></a></li>";
+    // ======================================================================================================= /Reference Links
+    */
 
     let dataStruct = {
       school: schoolBuilder,
-      references: "<h1>Cool Stuff We may Talk about in Class</h1>" + referenceList
+      references: "<h1>Cool Stuff We Talk about in Class</h1>" + referenceList
     }
   </script>
 
@@ -53,7 +69,7 @@
     <div id="sub-nav">
       <ul>
         <li><a href='tutorials.html'>Class Tutorials</a></li>
-        <li><a class='sub-nav__item references' href='#'>References</a></li>
+        <li><a class='sub-nav__item references' href='#'>Reference Links</a></li>
         <li><a href='readings.html'>Course Readings</a></li>
         <li><a class='sub-nav__item school' href='#'>University Resources</a></li>
       </ul>
