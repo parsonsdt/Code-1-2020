@@ -15,10 +15,15 @@
     let assignment1 = "<h1>Assignment 1: Instructional Drawing</h1>";
     assignment1 += "<p>For your homework, imagine you are an artist sending instructions for your work to be replicated with code (i.e. <a href='https://en.wikipedia.org/wiki/Grapefruit_(book)'>Yoko Ono</a> or <a href='https://massmoca.org/event/walldrawing274/'>Sol Lewitt</a>). ";
     assignment1 += "<ul><li>Write pseudocode for a drawing that you want to execute</li><li>Exchange your instructions with a partner in the class</li><li>Following your partner's instructions, use p5 to create their drawing</li></ul></p><h2 class='dueDate'>Due: Monday, September 14</h2>";
+      
+    let assignment2 = "<h2>Assignment 2: Face Generator</h2>";
+    assignment2 += "<p>In parameterized design, you are a conductor rather than an individual musician. Instead of producing a single design where you have to draw out all the details step by step, you are using code to create a set of parameters that generate a variety of designs.</p>";
+    
+    assignment2 += "<p>For assignment two you need to create a face generator using customized variables and the random() function. Start by sketching on a piece of paper. Draw two faces, one with features that take up the maximum space on canvas and the other face with features that take up the minimum space. Plug the maximum / minimum values into the random() for each feature. Test, iterate, and refine the parameters by paying great attention to details.</p><iframe width='400' height='400' border='none' src='https://editor.p5js.org/nicky.jpg/embed/wOwZ4mUPp'></iframe><p>Face Generator by Nicky Du.<h2 class='dueDate'>Due: Monday, September 21</h2>"
 
     let dataStruct = {
       instructional: assignment1,
-      face: "<h1>Assignment 2: Face Generator</h1><p>Coming Soon</p>",
+      face: assignment2,
       personal: "<h1>Coming Soon</h1>",
       optical: "<h1>Coming Soon</h1>",
     }
@@ -42,7 +47,7 @@
     <div id="sub-nav">
       <ul>
         <li><a href="#" class="instructional sub-nav__item">#1 Instructional Drawing</a></li>
-        <li>#2 Face Generator</li>
+          <li><a href="#" class="face sub-nav__item">#2 Face Generator</a></li>
         <li>#3 Personal Time</li>
         <li>#4 Optical Illusion</li>
         <li>#5 Avatar Generator</li>
