@@ -2,7 +2,7 @@ let main;
 function activateSubNav(options) {
   
   main = document.getElementById("main-panel");
-  checkForURLDirectLink();
+  checkForURLDirectLink(options);
 
   // I believe the code below should work for any sub-nav items we may want to put in there
   let navs = document.getElementsByClassName("sub-nav__item");
@@ -23,7 +23,7 @@ function activateSubNav(options) {
   }
 }
 
-function checkForURLDirectLink() {
+function checkForURLDirectLink(options) {
   let autoPopulate = document.location.href.split("section=")[1];
   console.log(dataStruct[autoPopulate], autoPopulate);
 
