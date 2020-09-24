@@ -119,6 +119,7 @@ h1, h2, h3, h4 {
     #main-panel .syllabus__gradeHolder div:nth-child(odd) {
       font-weight: bold;
     }
+    /* ===============================================    Grade Rubric Layout */
   #main-panel .syllabus__rubricTable {
     display: grid;
     grid-template-columns: 8% auto auto auto auto;
@@ -151,9 +152,43 @@ h1, h2, h3, h4 {
       color: #e3ded9;
       font-weight: bold;
       } /* table headers */
+
+  /* ============================================ Main Image Layout */
   #main-panel .resource_image, #main-panel img {
     width: 90%;
   }
+
+  /* ==================================== Only used on PeopleC.html at the moment */
+  #main-panel ul.portfolioLayout {
+    width: 50%;
+    list-style: none;
+  }
+  #main-panel ul.portfolioLayout li {
+    display: inline-block;
+    width: 30%;
+  }
+    #main-panel ul.portfolioLayout li a {
+      color: #020d22;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      font-size: 2em;
+      line-height: 1.75;
+      text-align: center;
+    }
+      #main-panel ul.portfolioLayout li:hover:nth-child(4n-1) {
+        background-color: #99BFAA;
+      }
+      #main-panel ul.portfolioLayout li:hover:nth-child(4n-2) {
+        background-color: #5c868d;
+      }
+      #main-panel ul.portfolioLayout li:hover:nth-child(4n-3) {
+        background-color: #C8D6CA;
+      }
+      #main-panel ul.portfolioLayout li:hover:nth-child(4n) {
+        background-color: #5c3d46;
+      }
+
 #home-panel {
   flex: 1;
 }
