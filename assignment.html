@@ -1,106 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code 1 Assignments Page</title>
 
-  <title>Code 1 Assignments Page</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+    <script>
+      let assignment1 = "<h1>Assignment 1: Instructional Drawing</h1>";
+      assignment1 +=
+        "<p>For your homework, imagine you are an artist sending instructions for your work to be replicated with code (i.e. <a href='https://en.wikipedia.org/wiki/Grapefruit_(book)'>Yoko Ono</a> or <a href='https://massmoca.org/event/walldrawing274/'>Sol Lewitt</a>). ";
+      assignment1 +=
+        "<ul><li>Write pseudocode for a drawing that you want to execute</li><li>Exchange your instructions with a partner in the class</li><li>Following your partner's instructions, use p5 to create their drawing</li></ul></p><h2 class='dueDate'>Due: Monday, September 14</h2>";
 
-  <script>
-    let assignment1 = "<h1>Assignment 1: Instructional Drawing</h1>";
-    assignment1 += "<p>For your homework, imagine you are an artist sending instructions for your work to be replicated with code (i.e. <a href='https://en.wikipedia.org/wiki/Grapefruit_(book)'>Yoko Ono</a> or <a href='https://massmoca.org/event/walldrawing274/'>Sol Lewitt</a>). ";
-    assignment1 += "<ul><li>Write pseudocode for a drawing that you want to execute</li><li>Exchange your instructions with a partner in the class</li><li>Following your partner's instructions, use p5 to create their drawing</li></ul></p><h2 class='dueDate'>Due: Monday, September 14</h2>";
-      
-    let assignment2 = "<h1>Assignment 2: Face Generator</h1>";
-    assignment2 += "<p>In parameterized design, you are a conductor rather than an individual musician. Instead of producing a single design where you have to draw out all the details step by step, you are using code to create a set of parameters that generate a variety of designs.</p>";
-    
-    assignment2 += "<p>For assignment two you need to create a face generator using customized variables and the random() function. Start by sketching on a piece of paper. Draw two faces, one with features that take up the maximum space on canvas and the other face with features that take up the minimum space. Plug the maximum / minimum values into the random() for each feature. Test, iterate, and refine the parameters by paying great attention to details.</p><iframe width='400' height='400' border='none' src='https://editor.p5js.org/nicky.jpg/embed/wOwZ4mUPp'></iframe><p>Face Generator by Nicky Du.<h2 class='dueDate'>Due: Monday, September 21</h2>"
+      let assignment2 = "<h1>Assignment 2: Face Generator</h1>";
+      assignment2 +=
+        "<p>In parameterized design, you are a conductor rather than an individual musician. Instead of producing a single design where you have to draw out all the details step by step, you are using code to create a set of parameters that generate a variety of designs.</p>";
 
-    let assignment3 = "<h1>Assignment 3: Personal Time</h1>";
-    assignment3 += "<figure><img src='images/sundialRing.png' alt='A 16th century sundial ring'><figcaption>A 16th century sundial ring. <a href='https://www.bonhams.com/auctions/13918/lot/17/'>Source</a></figcaption></figure>";
-    assignment3 += "<p>Computers track time exactly as conventional clocks do. They mark seconds, minutes, and hours according to a 24 hour cycle. But, this segmented, discrete, and regimented approach to parsing time is not universal in terms of capturing and measuring of human experience. In this assignment you are tasked with developing a version of time-keeping that is personal to you. </p><p>How you choose to represent time may not line up with how  ordinary clocks represent time. In order to complete this assignment you are invited to think of time expansively and alternatively, moving beyond conventional time keeping units. What are other ways in which you can mark the passage of time? What if time itself were turned on its head, driven not by standard time-keeping units, but perhaps subjective, personal, or even irrational organization?</p>";
-    assignment3 += "<h2>Design Constraints</h2><p>Please incorporate the following programming concepts in your time keeper:</p>";
-    assignment3 += "<ul><li>IF / ELSE Statement</li>";
-    assignment3 += "<li>millis(), OR second() / minute() / hour()</li>";
-    assignment3 += "<li>You’re also encouraged to integrate map() or the boolean variable when appropriate</li></ul>";
-    assignment3 += "<h2>Prompts if You’re Stuck</h2><p>If you’re not sure what to do, feel free to pick one of these, but it’s not required. </p><ul>";
-    assignment3 += "<li>Represent a memorable day or moment from your life and represent it cyclically</li>";
-    assignment3 += "<li>How might a whale, tree, or other non-human intelligence perceive time?</li>";
-    assignment3 += "<li>What if clocks used humans to track time? How might their perception differ based on our daily/weekly cycles?</li></ul>";
-    assignment3 += "<h2 class='dueDate'>Due: Monday, September 28</h2>";
+      assignment2 +=
+        "<p>For assignment two you need to create a face generator using customized variables and the random() function. Start by sketching on a piece of paper. Draw two faces, one with features that take up the maximum space on canvas and the other face with features that take up the minimum space. Plug the maximum / minimum values into the random() for each feature. Test, iterate, and refine the parameters by paying great attention to details.</p><iframe width='400' height='400' border='none' src='https://editor.p5js.org/nicky.jpg/embed/wOwZ4mUPp'></iframe><p>Face Generator by Nicky Du.<h2 class='dueDate'>Due: Monday, September 21</h2>";
 
-    let assignment4 = "<h1>Assignment 4: Optical Illusion</h1>";
-    assignment4 += "<p>Computers represent all sorts of data by using pixels. Because pixels are alls square, computers utilize a variety of techniques to fool the human eye in to seeing circles, triangles, or other complex shapes.</p>";
-    assignment4 += "<p>In this assignment, we ask you to go further, and create an animated optical illusion. A <a href='https://en.wikipedia.org/wiki/Moir%C3%A9_pattern'>moire pattern</a> is one technique, but you are encouraged to draw inspiration from <a href='https://en.wikipedia.org/wiki/Op_art'>Op Art</a> and other sources.</p>";
-    assignment4 += "<iframe width='600' height='400' src='https://editor.p5js.org/norskov/embed/PpcAqLaT5'></iframe>";
-    assignment4 += "<p>If you’re stuck on how to begin, check out <a href='https://medium.com/@naziafakhruddin/the-mysterious-moir%C3%A9-pattern-49d797897355'>this article</a> about creating Moire patterns in p5, and <a href='https://medium.com/@naziafakhruddin/creating-illusions-using-basic-shapes-in-p5-js-part-2-eb33dddbca1f'>this article</a> about creating scintillating grid illusions.</p>";
-    assignment4 += "<h2>Design Constraints</h2><p>Please incorporate the following programming concepts in your optical illusion:</p>";
-    assignment4 += "<ul><li>At least one For loop</li>";
-    assignment4 += "<li>Animation (can't be static)</li>";
-    assignment4 += "<li>Integrating rotate(), translate(), or other matrix transformations may be helpful, but is not required.</li></ul>";
+      let assignment3 = "<h1>Assignment 3: Personal Time</h1>";
+      assignment3 +=
+        "<figure><img src='images/sundialRing.png' alt='A 16th century sundial ring'><figcaption>A 16th century sundial ring. <a href='https://www.bonhams.com/auctions/13918/lot/17/'>Source</a></figcaption></figure>";
+      assignment3 +=
+        "<p>Computers track time exactly as conventional clocks do. They mark seconds, minutes, and hours according to a 24 hour cycle. But, this segmented, discrete, and regimented approach to parsing time is not universal in terms of capturing and measuring of human experience. In this assignment you are tasked with developing a version of time-keeping that is personal to you. </p><p>How you choose to represent time may not line up with how  ordinary clocks represent time. In order to complete this assignment you are invited to think of time expansively and alternatively, moving beyond conventional time keeping units. What are other ways in which you can mark the passage of time? What if time itself were turned on its head, driven not by standard time-keeping units, but perhaps subjective, personal, or even irrational organization?</p>";
+      assignment3 +=
+        "<h2>Design Constraints</h2><p>Please incorporate the following programming concepts in your time keeper:</p>";
+      assignment3 += "<ul><li>IF / ELSE Statement</li>";
+      assignment3 += "<li>millis(), OR second() / minute() / hour()</li>";
+      assignment3 +=
+        "<li>You’re also encouraged to integrate map() or the boolean variable when appropriate</li></ul>";
+      assignment3 +=
+        "<h2>Prompts if You’re Stuck</h2><p>If you’re not sure what to do, feel free to pick one of these, but it’s not required. </p><ul>";
+      assignment3 +=
+        "<li>Represent a memorable day or moment from your life and represent it cyclically</li>";
+      assignment3 +=
+        "<li>How might a whale, tree, or other non-human intelligence perceive time?</li>";
+      assignment3 +=
+        "<li>What if clocks used humans to track time? How might their perception differ based on our daily/weekly cycles?</li></ul>";
+      assignment3 += "<h2 class='dueDate'>Due: Monday, September 28</h2>";
 
-    let assignment5 = "<h1>Assignment 5: Avatar Generator</h1>"
-    assignment5 += "<p>Many computer programs build custom avatars for their users based on a series of pre-generated parts. Think about range of visually interesting characters you were able to generate just with a few primitive shapes in your face generator assignment. </br> </br>For this week's assignment, you will use arrays to create your own avatar generator from disparate pieces.</p>"
-    assignment5 += "<video width='600' height='400' controls autoplay><source src='images/creaturecreator.m4v' type='video/mp4'></video>";
-    assignment5 += "<p>For inspiration, check out the creature creation in <a href='https://en.wikipedia.org/wiki/Spore_(2008_video_game)'>Spore</a> (video above), create your own <a href='https://www.bitmoji.com/'> Bitmoji </a>character, or draw parts on pieces of paper to see how many avatars you can generate. To challenge yourself, think about how your avatar could influence or interact with the environment of your sketch. <strong>Your avatar generator does not have to be literal in nature.</strong> </p>"
-    assignment5 += "<h2>Design Constraints</h2><p>Please incorporate the following programming concepts in your Avatar Generator:</p>";
-    assignment5 += "<ul><li>2 or more separate parts (example: Head and Body; Face and Hair; Arms, Legs, Body, Head; etc…)</li>";
-    assignment5 += "<li>Use functions to generate each avatar</li>";
-    assignment5 += "<li>Creating illustrations you draw outside of p5 and importing them in will look great but is not required.</li>";
-    assignment5 += "<li>Arrays and matrix transformations may be helpful but are not required.</li></ul>";
-    let dataStruct = {
-      instructional: assignment1,
-      face: assignment2,
-      time: assignment3,
-      optical: assignment4,
-      avatar: assignment5
-    }
+      let assignment4 = "<h1>Assignment 4: Optical Illusion</h1>";
+      assignment4 +=
+        "<p>Computers represent all sorts of data by using pixels. Because pixels are alls square, computers utilize a variety of techniques to fool the human eye in to seeing circles, triangles, or other complex shapes.</p>";
+      assignment4 +=
+        "<p>In this assignment, we ask you to go further, and create an animated optical illusion. A <a href='https://en.wikipedia.org/wiki/Moir%C3%A9_pattern'>moire pattern</a> is one technique, but you are encouraged to draw inspiration from <a href='https://en.wikipedia.org/wiki/Op_art'>Op Art</a> and other sources.</p>";
+      assignment4 +=
+        "<iframe width='600' height='400' src='https://editor.p5js.org/norskov/embed/PpcAqLaT5'></iframe>";
+      assignment4 +=
+        "<p>If you’re stuck on how to begin, check out <a href='https://medium.com/@naziafakhruddin/the-mysterious-moir%C3%A9-pattern-49d797897355'>this article</a> about creating Moire patterns in p5, and <a href='https://medium.com/@naziafakhruddin/creating-illusions-using-basic-shapes-in-p5-js-part-2-eb33dddbca1f'>this article</a> about creating scintillating grid illusions.</p>";
+      assignment4 +=
+        "<h2>Design Constraints</h2><p>Please incorporate the following programming concepts in your optical illusion:</p>";
+      assignment4 += "<ul><li>At least one For loop</li>";
+      assignment4 += "<li>Animation (can't be static)</li>";
+      assignment4 +=
+        "<li>Integrating rotate(), translate(), or other matrix transformations may be helpful, but is not required.</li></ul>";
 
-  </script>
-  <script src="script.js" defer></script>
-</head>
+      let assignment5 = "<h1>Assignment 5: Avatar Generator</h1>";
+      assignment5 +=
+        "<p>Many computer programs build custom avatars for their users based on a series of pre-generated parts. Think about range of visually interesting characters you were able to generate just with a few primitive shapes in your face generator assignment. </br> </br>For this week's assignment, you will use functions and random() to create your own avatar generator from disparate pieces. Think of this as the Face Generator assignment but leveled up!</p>";
+      assignment5 +=
+        "<video width='600' height='400' controls autoplay><source src='images/creaturecreator.m4v' type='video/mp4'></video>";
+      assignment5 +=
+        "<p>For inspiration, check out the creature creation in <a href='https://en.wikipedia.org/wiki/Spore_(2008_video_game)'>Spore</a> (video above), create your own <a href='https://www.bitmoji.com/'> Bitmoji </a>character, or draw parts on pieces of paper to see how many avatars you can generate. To challenge yourself, think about how your avatar could influence or interact with the environment of your sketch. <strong>Your avatar generator does not have to be literal in nature.</strong> </p>";
+      assignment5 +=
+        "<h2>Design Constraints</h2><p>Please incorporate the following programming concepts in your Avatar Generator:</p>";
+      assignment5 +=
+        "<ul><li>2 or more separate parts (example: Head and Body; Face and Hair; Arms, Legs, Body, Head; etc…)</li>";
+      assignment5 +=
+        "<li>Creating illustrations you draw outside of p5 and importing them in will look great but is not required.</li>";
+      assignment5 += "<li>Use functions to generate each avatar</li>";
+      assignment5 +=
+        "<li>Arrays and matrix transformations may be helpful but are not required.</li></ul>";
+      let dataStruct = {
+        instructional: assignment1,
+        face: assignment2,
+        time: assignment3,
+        optical: assignment4,
+        avatar: assignment5,
+      };
+    </script>
+    <script src="script.js" defer></script>
+  </head>
 
-<body onload="activateSubNav('assignments');">
-  <div class="nav-container">
-    <div><a href="syllabus.html">syllabus</a></div>
-    <div><a href="schedule.html">schedule</a></div>
-    <div><a href="assignment.html">assignments</a></div>
-    <div><a href="readings.html">readings</a></div>
-    <div><a href="tutorials.html">tutorials</a></div>
-    <div><a href="resource.html">resources</a></div>
-    <div><a href="people.html">people</a></div>
-  </div>
-
-  <div class="main-container">
-    <div id="sub-nav">
-      <ul>
-        <li><a href="#" class="instructional sub-nav__item">#1 Instructional Drawing</a></li>
-        <li><a href="#" class="face sub-nav__item">#2 Face Generator</a></li>
-        <li><a href="#" class="time sub-nav__item">#3 Personal Time</a></li>
-        <li><a href="#" class="optical sub-nav__item">#4 Optical Illusion</a></li>
-        <li><a href="#" class="avatar sub-nav__item">#5 Avatar Generator</a></li>
-        <li>#6 Data Portrait</li>
-        <li>#7 Bitmap Game</li>
-        <li>#8 Moving Poster</li>
-        <li>#9 Interactive Poster</li>
-        <li>#10 Interface</li>
-      </ul>
+  <body onload="activateSubNav('assignments');">
+    <div class="nav-container">
+      <div><a href="syllabus.html">syllabus</a></div>
+      <div><a href="schedule.html">schedule</a></div>
+      <div><a href="assignment.html">assignments</a></div>
+      <div><a href="readings.html">readings</a></div>
+      <div><a href="tutorials.html">tutorials</a></div>
+      <div><a href="resource.html">resources</a></div>
+      <div><a href="people.html">people</a></div>
     </div>
-    <div id="main-panel">
-      <h1>
-        Assignments
-      </h1>
-      <p>
-        <img style="width:40%; display: block; margin-bottom: 1em;" src="images/pusheenType.gif">
-        When each assignment on the left is assigned, the link will be turned on. 
-      </p>
-    </div>
-  </div>
-</body>
 
+    <div class="main-container">
+      <div id="sub-nav">
+        <ul>
+          <li>
+            <a href="#" class="instructional sub-nav__item"
+              >#1 Instructional Drawing</a
+            >
+          </li>
+          <li><a href="#" class="face sub-nav__item">#2 Face Generator</a></li>
+          <li><a href="#" class="time sub-nav__item">#3 Personal Time</a></li>
+          <li>
+            <a href="#" class="optical sub-nav__item">#4 Optical Illusion</a>
+          </li>
+          <li>
+            <a href="#" class="avatar sub-nav__item">#5 Avatar Generator</a>
+          </li>
+          <li>#6 Data Portrait</li>
+          <li>#7 Bitmap Game</li>
+          <li>#8 Moving Poster</li>
+          <li>#9 Interactive Poster</li>
+          <li>#10 Interface</li>
+        </ul>
+      </div>
+      <div id="main-panel">
+        <h1>Assignments</h1>
+        <p>
+          <img
+            style="width: 40%; display: block; margin-bottom: 1em"
+            src="images/pusheenType.gif"
+          />
+          When each assignment on the left is assigned, the link will be turned
+          on.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
