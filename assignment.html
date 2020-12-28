@@ -124,7 +124,12 @@
         assignment8 += "<p>Once you have your word or phrase, write (or draw) a descriptor list of the colors, shapes, and movement you associate with your word. For example if your word was “frantic” you might write down–– “bright, neon colors, small dots, that oscillate in a jittery fashion.” </p>";
         assignment8 += "<p>Keeping your descriptor list in mind, generate a poster with shapes, movements, colors, and typography that you associate with your word. Experiment with how the poster could change over time; how the type occupies the screen. For inspiration check out the work of <a href='http://www.moonjang.com/'>Moon Jang</a> and some of the featured work in the p5.js showcase <a href='https://p5js.org/showcase/featuring/moon-xin.html'>HERE</a>, or Tim Rodenbroker’s <a href='https://timrodenbroeker.de/programming-posters/'>programming posters</a>.</p>";
         assignment8 += "<p>You can use canvas transformations, trigonometry functions, physics, or any tools we’ve learned up until this point to create your poster. Hint: To build upon this assignment for the interactive poster, think about how to structure your code (i.e. arrays and classes) so you can easily access the element’s data to add interactivity.</p>";
-
+      
+      let assignment9 = "<h1>Assignment 9: Interactive Poster</h1>";
+        assignment9 += "<p>Building on your Moving Poster project, create external controls for your poster. </p>";
+        assignment9 += "<p>Think about the word or phrase you based your poster on and create controls which compliment or enhance the meaning of that phrase. Each control you add should have a visual effect corresponding to your original concept.</p>";
+        assignment9 += "<p>You can use any of the tools we’ve learned up to this point. In addition, please include a p5 Button, Slider, or other UI element using the <a href='https://p5js.org/reference/#group-DOM'>p5 DOM interface</a>. Label each control so someone interacting with it knows what the control will do. Include functionality to download the poster a user creates using the p5 function <a href='https://p5js.org/reference/#/p5/save'>save()</a>. </p>";
+      
       let dataStruct = {
         instructional: assignment1,
         face: assignment2,
@@ -133,7 +138,8 @@
         avatar: assignment5,
         data: assignment6,
         bitmap: assignment7,
-        poster: assignment8
+        poster: assignment8,
+        interactive: assignment9
       };
     </script>
     <script src="script.js" defer></script>
@@ -153,23 +159,15 @@
     <div class="main-container">
       <div id="sub-nav">
         <ul>
-          <li>
-            <a href="#" class="instructional sub-nav__item"
-              >#1 Instructional Drawing</a
-            >
-          </li>
+          <li><a href="#" class="instructional sub-nav__item">#1 Instructional Drawing</a></li>
           <li><a href="#" class="face sub-nav__item">#2 Face Generator</a></li>
           <li><a href="#" class="time sub-nav__item">#3 Personal Time</a></li>
-          <li>
-            <a href="#" class="optical sub-nav__item">#4 Optical Illusion</a>
-          </li>
-          <li>
-            <a href="#" class="avatar sub-nav__item">#5 Avatar Generator</a>
-          </li>
+          <li><a href="#" class="optical sub-nav__item">#4 Optical Illusion</a></li>
+          <li><a href="#" class="avatar sub-nav__item">#5 Avatar Generator</a></li>
           <li><a href="#" class="data sub-nav__item">#6 Data Portrait</a></li>
-         <li><a href="#" class="bitmap sub-nav__item">#7 Bitmap Game</a></li>
+          <li><a href="#" class="bitmap sub-nav__item">#7 Bitmap Game</a></li>
           <li><a href="#" class="poster sub-nav__item">#8 Moving Poster</a></li>
-          <li>#9 Interactive Poster</li>
+          <li><a href="#" class="interactive sub-nav__item">#9 Interactive Poster</a></li>
           <li>#10 Interface</li>
         </ul>
       </div>
